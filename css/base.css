@@ -1,0 +1,126 @@
+html {
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+    height: 100%;
+}
+
+body {
+    margin:0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background: floralwhite;
+    font-size: 1.6rem;
+}
+
+header, 
+footer {
+    font-family: 'Montserrat', sans-serif;
+    background: #606060;
+    text-align: center;
+    height: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 2rem;
+}
+
+footer {
+    color: #fff;
+    height: 7rem;
+}
+
+main {
+    flex: 1;
+}
+
+article {
+    max-width: 100rem;
+    margin: 5.5rem auto;
+    padding: 0 2rem;
+}
+
+h1, h2, h3, h4, legend {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: normal;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2, h3, h4, .article h1 {
+    color: #333;
+}
+
+h3 {
+    margin-top: 4rem;
+}
+
+p {
+    line-height: 2.2rem;
+}
+
+a {
+    color: palevioletred;
+}
+
+a:hover {
+    color: darkred;
+}
+
+header h1 a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer p {
+    font-size: 1.8rem;
+}
+
+.botones {
+    margin-bottom: 1.5rem;
+}
+
+button {
+    font-family: 'Montserrat', sans-serif;
+    padding: 1rem 2rem;
+    background: #666;
+    color: #fff;
+    border: none;
+    border-radius: 0.3rem;
+    cursor: pointer;
+}
+
+button:disabled {
+    filter: opacity(.5);
+    cursor: not-allowed;
+}
+
+figure img {
+    box-shadow: 2px 2px 5px 0px rgba(96,96,96,1);
+}
+figcaption {
+    margin-left: 1rem;
+    margin-top: 1rem;
+}
+
+iframe {
+    display: block;
+    margin: 5rem auto; 
+}
+
+form fieldset {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 4px;
+}
+
+legend {
+    font-size: 2rem;
+}
+
+input[type="range"] {
+    vertical-align: middle;
+}
