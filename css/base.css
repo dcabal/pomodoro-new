@@ -124,3 +124,18 @@ legend {
 input[type="range"] {
     vertical-align: middle;
 }
+
+@media(max-width: 600px) {
+    form fieldset {
+        flex-direction: column;
+    }
+
+    form fieldset > * {
+        margin-bottom: 2rem;
+    }
+
+    form fieldset input {
+        display: block;
+        margin: 1rem auto;
+    }
+}

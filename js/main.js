@@ -3,7 +3,7 @@ let worker = null;
 let mode = 'work';
 
 $(function() {
-
+    askPermission();
     $('#tareaActual').hide();
     $('#descanso').hide();
 
@@ -68,6 +68,7 @@ function showTimer(time) {
             $('#trabajar').show();
         }
         worker.terminate();
+        showNotification(mode);
     }
 }
 
@@ -84,6 +85,7 @@ function rest() {
     updateTime();
 }
 
+/* Comienza el descanso */
 function startRest() {
     $('#infoDescanso').show();
     $('#progressDescanso').show();
@@ -101,3 +103,5 @@ function backToWork() {
     $('#empezar').attr('disabled', 'disabled');
     updateTime();
 }
+
+
